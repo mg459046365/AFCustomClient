@@ -8,7 +8,7 @@
 
 #import "AFCustomClient.h"
 
-static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
+static NSString * const AFAppDotNetAPIBaseURLString = @"http://wthrcdn.etouch.cn/";
 
 @implementation AFCustomClient
 
@@ -21,10 +21,10 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
         CGFloat  sysVersion = [[UIDevice currentDevice].systemVersion floatValue];//判断系统os版本
         if (sysVersion < 7.0) {//如果小于7.0 则使用AFHTTPRequestOperationManager
             _sharedClient = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
-            
         }else{//如果大于7.0 则使用AFHTTPSessionManager
             _sharedClient = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
         }
+        
     });
     return _sharedClient;
 }
@@ -76,7 +76,7 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
                 
             }
         }else{//os版本大于7.0执行
-            AFHTTPSessionManager   *httpClient = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
+            AFHTTPSessionManager   *httpClient = [self sharedClient];
             if (httpMethod == HttpMethodGet) {
                 
                 [httpClient GET:URLString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {

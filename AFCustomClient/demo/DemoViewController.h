@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DemoViewController : UIViewController
+@interface DemoViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+
+@property (strong, nonatomic) NSMutableArray *dataArray;
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
 @end

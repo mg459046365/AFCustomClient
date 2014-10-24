@@ -22,6 +22,8 @@
 		1872280719F9EE5400C6BBB6 /* AFCustomClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872280619F9EE5400C6BBB6 /* AFCustomClient.m */; };
 		1872280C19FA090E00C6BBB6 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872280A19FA090E00C6BBB6 /* DemoViewController.m */; };
 		1872280D19FA090E00C6BBB6 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872280B19FA090E00C6BBB6 /* DemoViewController.xib */; };
+		1872281119FA3AF500C6BBB6 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872280F19FA3AF500C6BBB6 /* DemoTableViewCell.m */; };
+		1872281219FA3AF500C6BBB6 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872281019FA3AF500C6BBB6 /* DemoTableViewCell.xib */; };
 		DD8EA7B9888EED9ED2B8E61C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1295CE853E0C3F0B9B8D1C80 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,9 @@
 		1872280919FA090E00C6BBB6 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		1872280A19FA090E00C6BBB6 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		1872280B19FA090E00C6BBB6 /* DemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		1872280E19FA3AF500C6BBB6 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		1872280F19FA3AF500C6BBB6 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		1872281019FA3AF500C6BBB6 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoTableViewCell.xib; sourceTree = "<group>"; };
 		E9BDDD3598C144809461414D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2D6539859947A371B8198F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +181,9 @@
 				1872280919FA090E00C6BBB6 /* DemoViewController.h */,
 				1872280A19FA090E00C6BBB6 /* DemoViewController.m */,
 				1872280B19FA090E00C6BBB6 /* DemoViewController.xib */,
+				1872280E19FA3AF500C6BBB6 /* DemoTableViewCell.h */,
+				1872280F19FA3AF500C6BBB6 /* DemoTableViewCell.m */,
+				1872281019FA3AF500C6BBB6 /* DemoTableViewCell.xib */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -268,6 +276,7 @@
 			files = (
 				187227E019F9EB8200C6BBB6 /* InfoPlist.strings in Resources */,
 				1872280D19FA090E00C6BBB6 /* DemoViewController.xib in Resources */,
+				1872281219FA3AF500C6BBB6 /* DemoTableViewCell.xib in Resources */,
 				187227E819F9EB8200C6BBB6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +331,7 @@
 			files = (
 				187227E619F9EB8200C6BBB6 /* AppDelegate.m in Sources */,
 				1872280719F9EE5400C6BBB6 /* AFCustomClient.m in Sources */,
+				1872281119FA3AF500C6BBB6 /* DemoTableViewCell.m in Sources */,
 				187227E219F9EB8200C6BBB6 /* main.m in Sources */,
 				1872280C19FA090E00C6BBB6 /* DemoViewController.m in Sources */,
 			);
